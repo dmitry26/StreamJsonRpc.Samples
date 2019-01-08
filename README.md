@@ -17,7 +17,7 @@ These samples are based on the - https://github.com/AArnott/StreamJsonRpc.Sample
 
 **Web Client:** Angular 7.2.0, flex-layout 7.0, Material 7.2.1
 
-![](./images/WebClient1.jpg "WebClient")
+![](./images/WebClient1.jpg "WebClient1")
 
-![](./images/WebClient2.jpg "WebClient")
+![](./images/WebClient2.jpg "WebClient2")
 
