@@ -1,0 +1,28 @@
+<mat-toolbar color="primary">
+  StreamJsonRpcClient App
+</mat-toolbar>
+
+<div fxFlexFill fxLayout="column" fxLayoutAlign="space-around center" fxLayoutGap="20px">
+  <p></p>
+  <mat-card>
+    <div fxLayout="row wrap" fxLayout.xs="column" fxLayoutGap="20px" fxLayoutAlign="center center">
+      <mat-form-field appearance="outline">
+        <mat-label>Value A</mat-label>
+        <input matInput placeholder="Value A" type="number" [(ngModel)]="valueA" (change)="onChangeValue($event)">
+      </mat-form-field>
+      <mat-label class="md-plus">+</mat-label>
+      <mat-form-field appearance="outline">
+        <mat-label>Value B</mat-label>
+        <input matInput placeholder="Value B" type="number" [(ngModel)]="valueB" (change)="onChangeValue($event)">
+      </mat-form-field>
+      <mat-label class="md-plus">=</mat-label>
+      <mat-label>{{addRes}}</mat-label>
+      <button mat-raised-button color="primary" [disabled]="isCalcBtnDisabled()" (click)="onCalc()">Calculate on server</button>
+    </div>
+    <div fxLayout="column">
+      <hr />
+      <mat-card-content>Socket Status: {{socketStatus}}</mat-card-content>
+      <mat-card-content *ngIf="msgStatus">{{msgStatus}}</mat-card-content>
+    </div>
+  </mat-card>
+</div>

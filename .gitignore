@@ -1,0 +1,11 @@
+bin/
+obj/
+*.nupkg
+.vs
+.vscode
+packages/
+src/**/logs/
+src/**/appsettings.Development.json
+src/**/*.csproj.user
+**/node_modules/
+**/ClientApp/dist/
